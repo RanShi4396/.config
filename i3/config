@@ -284,7 +284,7 @@ bindsym $mod+p exec /usr/local/bin/switch-audio-port
 
 ## App shortcuts
 bindsym $mod+w exec /usr/bin/firefox
-bindsym $mod+o exec /home/ranshi/Repos/VSCode-linux-x64/bin/code-insiders
+bindsym $mod+o exec /home/ranshi/Software/VSCode-linux-x64/bin/code-insiders
 bindsym $mod+n exec /usr/bin/thunar
 bindsym Print exec flameshot gui --clipboard --path ~/Pictures/captures
 
@@ -320,11 +320,11 @@ set $terminalname "kitty"
 #workspace $ws5 output HDMI-0
 
 # bind program to workspace and focus to them on startup:
-#assign [class=$terminalname] $ws1
-assign [class="(?i)firefox"] $ws2
-assign [class="Thunar"] $ws3
+# assign [class=$terminalname] $ws1
+# assign [class="(?i)firefox"] $ws2
+# assign [class="Thunar"] $ws3
 assign [class="thunderbird"] $ws4
-assign [class="TelegramDesktop"] $ws5
+# assign [class="TelegramDesktop"] $ws5
 
 # automatic set focus new window if it opens on another workspace than the current:
 #for_window [class=$terminalname] focus
