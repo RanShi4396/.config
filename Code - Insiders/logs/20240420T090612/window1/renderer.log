@@ -1,0 +1,5 @@
+2024-04-20 09:06:13.017 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'handleIssueUri' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2024-04-20 09:06:13.041 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'handleIssueUri' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2024-04-20 09:06:13.557 [info] Started local extension host with pid 26368.
+2024-04-20 09:06:14.096 [info] ADDED bridge agent "brigde.editor"
+2024-04-20 09:06:16.488 [info] [perf] Render performance baseline is 56ms

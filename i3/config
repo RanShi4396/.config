@@ -284,7 +284,7 @@ bindsym $mod+p exec /usr/local/bin/switch-audio-port
 
 ## App shortcuts
 bindsym $mod+w exec /usr/bin/firefox
-bindsym $mod+o exec /home/ranshi/Software/VSCode-linux-x64/bin/code-insiders
+bindsym $mod+o exec code
 bindsym $mod+n exec /usr/bin/thunar
 bindsym Print exec flameshot gui --clipboard --path ~/Pictures/captures
 
@@ -329,7 +329,7 @@ assign [class="thunderbird"] $ws4
 # automatic set focus new window if it opens on another workspace than the current:
 #for_window [class=$terminalname] focus
 for_window [class=(?i)firefox] focus
-for_window [class=Thunar] focus
+#for_window [class=Thunar] focus
 for_window [class=Thunderbird] focus
 for_window [class=TelegramDesktop] focus
 
@@ -451,6 +451,9 @@ exec --no-startup-id dunst
 ##################
 # floating rules #
 ##################
+# prevent too big dialogue box (for high dpi)
+floating_minimum_size 150 x 120 
+floating_maximum_size 640 x 480 
 
 # set floating (nontiling) for apps needing it
 for_window [class="Yad" instance="yad"] floating enable
@@ -465,6 +468,9 @@ for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
 for_window [class="Pamac-manager"] floating enable
 for_window [window_role="About"] floating enable
+for_window [class="firefox"] resize set 640 480 #to change size of Thunar file manager, found by xprop
+for_window [window_role="(?i)GtkFileChooserDialog"] resize set 640 480 #to set size of file choose dialog
+for_window [class=".*"] resize set 640 480 #to change size of floating windows 
 
 # set border of floating window
 for_window [class="urxvt"] border pixel 1
